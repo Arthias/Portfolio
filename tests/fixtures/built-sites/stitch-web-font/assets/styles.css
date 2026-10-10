@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  size-adjust: 90%;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  size-adjust: 90%;
+}
+
+:root {
+  color-scheme: light dark;
+  --background: light-dark(#f7f5f0, #10201e);
+  --surface: light-dark(#ece7dc, #1a2e2b);
+  --text: light-dark(#1c1917, #f5f5f4);
+  --muted: light-dark(#57534e, #a8a29e);
+  --accent: light-dark(#095f59, #5eead4);
+  --on-accent: light-dark(#ffffff, #1c1917);
+}
+
+html {
+  accent-color: var(--accent);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-size-adjust: from-font;
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-inline-size: 56rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  margin-block: 0;
+}
+
+.section + .section {
+  margin-block-start: 3rem;
+}
+
+header#bio {
+  border-block-start: 1px solid var(--accent);
+  padding-block-start: 1.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  line-height: 1;
+  text-wrap: balance;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+  text-wrap: balance;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+  text-wrap: balance;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 0.25rem 0;
+}
+
+p.headline {
+  color: var(--muted);
+  font-size: 1rem;
+  margin: 0 0 1.5rem 0;
+}
+
+p.period {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 1rem 0;
+}
+
+p:last-child {
+  margin-block-end: 0;
+}
+
+a:any-link {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 0.125em;
+  text-underline-offset: 0.25em;
+}
+
+a:any-link:hover {
+  text-decoration: none;
+}
+
+a:any-link:focus-visible {
+  outline: 0.25rem solid var(--accent);
+  outline-offset: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 40rem) {
+  ul.projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+li.project {
+  background-color: var(--surface);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+li.project h3 {
+  margin-block-end: 0.5rem;
+}
+
+li.project p {
+  margin-block-end: 1rem;
+}
+
+li.project p:last-child {
+  margin-block-end: 0;
+  margin-block-start: auto;
+}
+
+p.project-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+}
+
+p.project-links a {
+  min-inline-size: 24px;
+  min-block-size: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background-color: var(--accent);
+  color: var(--on-accent);
+  text-decoration: none;
+  border-radius: 9999px;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+p.project-links a:hover {
+  opacity: 0.9;
+}
+
+p.project-links a:focus-visible {
+  outline: 0.25rem solid var(--text);
+  outline-offset: 0.25rem;
+}
+
+ul.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+ul.links li {
+  display: flex;
+}
+
+ul.cv-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+ul.cv-list li {
+  display: block;
+}
+
+ul.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+ul.skills li {
+  background-color: var(--surface);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  min-block-size: 24px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 3rem 1.5rem;
+  margin-block-start: 3rem;
+}
+
+footer a {
+  color: var(--muted);
+}
+
+footer a:any-link:focus-visible {
+  outline: 0.25rem solid var(--accent);
+  outline-offset: 0.25rem;
+  border-radius: 0.25rem;
+}
