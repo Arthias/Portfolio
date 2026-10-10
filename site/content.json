@@ -1,79 +1,133 @@
 {
   "$schema": "./content.schema.json",
   "language": "en",
-  "name": "Ada Example",
-  "headline": "Frontend developer who likes fast, accessible web pages",
-  "photo": {
-    "src": "assets/avatar.svg",
-    "alt": "Ada Example's avatar: a simple drawing of a head and shoulders in two shades of grey"
-  },
-  "pitch": "I build small, fast websites that everyone can use, and I explain every choice in plain words.",
+  "name": "Bruno Manfredi",
+  "headline": "Solutions Architect & Technical Account Manager",
+  "pitch": "I turn ambiguous business needs into technical roadmaps across AI adoption, legacy modernization, and engineering leadership.",
   "highlights": [
-    { "text": "Every page I look after scores 100 for accessibility in Lighthouse" },
-    { "text": "Five years of teaching maths: I make technical choices easy to follow" },
-    { "text": "Two open-source projects on GitHub", "url": "https://github.com/octocat" }
+    {
+      "text": "Grew an SMB placement into a 30-engineer account across two companies and ~$20M in spend"
+    },
+    {
+      "text": "Matched 700+ engineers across 200+ clients, lifting placement rate from 30% to 70%"
+    },
+    {
+      "text": "Modernized core banking deployment at BBVA from days to minutes with a compliant PR pipeline"
+    }
   ],
   "availability": {
-    "text": "Open to junior frontend roles from January 2027.",
+    "text": "Open to full-time roles: Solutions Architect, Technical Account Manager or engineering leadership.",
     "actionLabel": "Write to me",
-    "actionUrl": "mailto:ada@example.com"
+    "actionUrl": "mailto:manfredi.br1@gmail.com"
   },
-  "location": { "city": "Milan", "country": "Italy", "timeZone": "Europe/Rome" },
+  "location": {
+    "city": "Manta",
+    "country": "Italy",
+    "timeZone": "Europe/Rome"
+  },
   "languages": [
     { "name": "English", "level": "native" },
+    { "name": "Spanish", "level": "native" },
     { "name": "Italian", "level": "B2" }
   ],
   "bio": [
-    "I build small, fast websites and the tools around them. Before I wrote code, I taught maths, so I still enjoy explaining things simply.",
-    "This is a sample portfolio of a fictional person. Replace it with your own story."
+    "I bridge the gap between complex engineering realities and executive business strategy. Across 15+ years in FinTech, banking, e-commerce, and automotive, I moved from back-end engineering and legacy modernization into owning end-to-end technical direction and client relationships.",
+    "Today I build and advise on production AI software—from React frontends and Chrome extensions to multi-provider LLM abstractions—focusing on feasibility, architecture, and what AI actually costs to run at scale.",
+    "Based in Piedmont, Italy, working across Europe and remotely."
   ],
   "projects": [
     {
-      "title": "Tide Tables",
-      "description": "A tiny web app that shows today's tides for a chosen harbour, built with plain HTML, CSS and JavaScript.",
-      "github": "https://github.com/octocat/Hello-World"
-    },
-    {
-      "title": "Reading Log",
-      "description": "A static site that lists the books I read, generated from one JSON file.",
-      "github": "https://github.com/octocat/Spoon-Knife",
-      "url": "https://octocat.github.io/Spoon-Knife/"
+      "title": "Artemis Quiver",
+      "description": "Production AI developer tool: React 18 & Vite SPA plus Chrome MV3 extension with four interchangeable LLM providers, local-first IndexedDB data model, and 144 automated tests.",
+      "github": "https://github.com/Arthias/Artemis_Quiver"
     }
   ],
   "links": [
-    { "label": "GitHub", "url": "https://github.com/octocat" },
-    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/ada-example" },
-    { "label": "Email", "url": "mailto:ada@example.com" }
+    { "label": "GitHub", "url": "https://github.com/Arthias" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/bruno-manfredi" },
+    { "label": "Email", "url": "mailto:manfredi.br1@gmail.com" }
   ],
   "cv": {
     "experience": [
       {
-        "role": "Junior Frontend Developer",
-        "organization": "Example Studio",
-        "start": "2024",
+        "role": "AI Engineering & Product Feasibility Advisory",
+        "organization": "Independent",
+        "start": "2026",
         "end": "present",
-        "summary": "Build and maintain marketing sites; brought every page to a Lighthouse accessibility score of 100."
+        "summary": "Advising founders on AI feasibility and production costs while shipping developer tools and local LLM workflows."
       },
       {
-        "role": "Maths Teacher",
-        "organization": "Example Secondary School",
-        "start": "2019",
-        "end": "2024",
-        "summary": "Taught maths to students aged 11 to 16 and ran the after-school coding club."
+        "role": "Director of Engineering, SMB",
+        "organization": "Toptal",
+        "start": "2022",
+        "end": "2026",
+        "summary": "Owned the full client lifecycle solo across 200+ clients, architectural discovery, matching 700+ engineers, and technical dispute arbitration."
+      },
+      {
+        "role": "Technical Lead, Core Banking Modernization",
+        "organization": "BBVA",
+        "start": "2021",
+        "end": "2022",
+        "summary": "Modernized core banking self-management from Java 5/6 and VB8 to Java 8 with Spring Boot, introducing automated CI/CD pipelines under financial regulations."
+      },
+      {
+        "role": "Back End Engineer",
+        "organization": "Globant",
+        "start": "2018",
+        "end": "2021",
+        "summary": "Maintained Disney Parks high-traffic e-commerce checkout microservices with 99.9% uptime, and contributed to GCP encryption service migration for Equifax."
+      },
+      {
+        "role": "End-User Computing Engineer, Renault Account",
+        "organization": "Atos",
+        "start": "2013",
+        "end": "2018",
+        "summary": "Directed 2017 WannaCry crisis response patching 1,000+ endpoints over a weekend, owned plant software standards, and cut Level 2 escalations by 30%."
       }
     ],
     "education": [
       {
-        "title": "Web Development Bootcamp",
-        "organization": "Example Academy",
-        "year": "2023"
+        "title": "Tecnicatura en Programación",
+        "organization": "Universidad Tecnológica Nacional (UTN)",
+        "year": "2019"
       },
       {
-        "title": "BSc Mathematics",
-        "organization": "Example University",
-        "year": "2018"
+        "title": "Computer Science (FaMAF)",
+        "organization": "Universidad Nacional de Córdoba",
+        "year": "2010"
       }
     ],
-    "skills": ["HTML", "CSS", "JavaScript", "Accessibility", "Git"]
-  }
+    "skills": [
+      "Solutions Architecture",
+      "Technical Discovery",
+      "Presales",
+      "LLM Applications",
+      "AI Feasibility",
+      "Java & Spring Boot",
+      "Python & FastAPI",
+      "React",
+      "CI/CD & DevOps",
+      "Docker",
+      "Cloud (AWS, GCP, Azure)",
+      "Legacy Modernization"
+    ]
+  },
+  "builtAt": {
+    "event": "DevFest Milano 2026",
+    "date": "2026-10-10"
+  },
+  "events": [
+    {
+      "name": "DevFest Milano 2026",
+      "date": "2026-10-10",
+      "city": "Milan",
+      "role": "attendee",
+      "sessions": [
+        {
+          "type": "workshop",
+          "title": "AI-Native Web Development, Hands-On"
+        }
+      ]
+    }
+  ]
 }
