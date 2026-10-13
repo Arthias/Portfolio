@@ -351,7 +351,7 @@ function renderProjects(content, labels) {
       `${picture}<p>${escapeHtml(project.description)}</p>${caseStudy ? `
         <dl class="case-study">${caseStudy}</dl>` : ""}
         <p class="project-links">
-          <a href="${escapeHtml(project.github)}">${escapeHtml(labels.code)}</a>
+          ${project.github ? `<a href="${escapeHtml(project.github)}">${escapeHtml(labels.code)}</a>` : ""}
           ${project.url ? `<a href="${escapeHtml(project.url)}">${escapeHtml(labels.live)}</a>` : ""}
         </p>`,
     );

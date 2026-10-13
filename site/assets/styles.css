@@ -278,6 +278,47 @@ button:focus-visible {
   line-height: 1.6;
 }
 
+.project-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-block-end: 1rem;
+  border: 1px solid color-mix(in srgb, var(--muted) 30%, transparent);
+  border-radius: 0.25rem;
+}
+
+.case-study {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.5rem 1rem;
+  margin-block: 1rem 0;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.case-study dt {
+  font-family: var(--font-details);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--muted);
+  padding-block-start: 0.125rem;
+}
+
+.case-study dd {
+  margin: 0;
+}
+
+@media (max-width: 40rem) {
+  .case-study {
+    grid-template-columns: 1fr;
+    gap: 0.125rem;
+  }
+
+  .case-study dd {
+    margin-block-end: 0.5rem;
+  }
+}
+
 .project-links {
   margin-block-start: 1rem;
   display: flex;

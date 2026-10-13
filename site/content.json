@@ -3,20 +3,20 @@
   "language": "en",
   "name": "Bruno Manfredi",
   "headline": "Solutions Architect & Technical Account Manager",
-  "pitch": "I turn ambiguous business needs into technical roadmaps across AI adoption, legacy modernization, and engineering leadership.",
+  "pitch": "I turn ambiguous business needs into technical requirements and roadmaps, then own the client relationship through delivery.",
   "highlights": [
     {
-      "text": "Grew an SMB placement into a 30-engineer account across two companies and ~$20M in spend"
+      "text": "Grew one hard-to-fill hiring request into a ~30-engineer relationship across two companies and ~$20M in spend, over four years"
     },
     {
-      "text": "Matched 700+ engineers across 200+ clients, lifting placement rate from 30% to 70%"
+      "text": "Matched 700+ engineers across 200+ clients; my discovery framework lifted the placement rate from 30% to 70%"
     },
     {
-      "text": "Modernized core banking deployment at BBVA from days to minutes with a compliant PR pipeline"
+      "text": "Cut core-banking deployments at BBVA from days to minutes with a pull-request pipeline built under regulatory compliance"
     }
   ],
   "availability": {
-    "text": "Open to full-time roles: Solutions Architect, Technical Account Manager or engineering leadership.",
+    "text": "Available now for full-time Solutions Architect, Technical Account Manager or engineering leadership roles. Remote across Europe, or hybrid in Milan or Turin. EU citizen, no sponsorship required.",
     "actionLabel": "Write to me",
     "actionUrl": "mailto:manfredi.br1@gmail.com"
   },
@@ -31,15 +31,38 @@
     { "name": "Italian", "level": "B2" }
   ],
   "bio": [
-    "I bridge the gap between complex engineering realities and executive business strategy. Across 15+ years in FinTech, banking, e-commerce, and automotive, I moved from back-end engineering and legacy modernization into owning end-to-end technical direction and client relationships.",
-    "Today I build and advise on production AI software—from React frontends and Chrome extensions to multi-provider LLM abstractions—focusing on feasibility, architecture, and what AI actually costs to run at scale.",
-    "Based in Piedmont, Italy, working across Europe and remotely."
+    "I work where business intent meets engineering reality. Since 2011, without a gap, that has meant endpoint engineering at a Renault plant, back-end work on the Disney Parks checkout, and modernising a core banking team at BBVA.",
+    "At Toptal I ran the whole client lifecycle on my own: discovery calls, architecture and stack assessment, matching, rate negotiation and replacements. When a delivery was contested, I was the one who read the code and wrote the finding that settled it.",
+    "Since 2026 I build AI tools hands-on and advise founders on scope and feasibility for AI products: what is worth building, what is not, and what it costs to run at production volume rather than at pilot volume.",
+    "I live in Manta, in Piedmont, and work with teams across Europe."
   ],
   "projects": [
     {
       "title": "Artemis Quiver",
-      "description": "Production AI developer tool: React 18 & Vite SPA plus Chrome MV3 extension with four interchangeable LLM providers, local-first IndexedDB data model, and 144 automated tests.",
-      "github": "https://github.com/Arthias/Artemis_Quiver"
+      "description": "Chrome extension and web app that scores a job posting against your CV, then drafts a tailored CV and cover letter with the LLM of your choice, cloud or local. No backend and no account: your data stays in your browser.",
+      "github": "https://github.com/Arthias/Artemis_Quiver",
+      "problem": "Tailoring a CV to every posting is slow, and pasting a whole career history into a hosted chatbot gives it away.",
+      "role": "Sole developer: product, architecture, code, tests and releases. I built it for my own job search and use it every day.",
+      "outcome": "Open source, at v3.9.4 with 147 commits, an automated test suite in CI and versioned GitHub releases (October 2026).",
+      "stack": "React 18, Vite, Tailwind, Chrome MV3, Dexie on IndexedDB. LLM providers behind one adapter: OpenAI-compatible, Anthropic, Gemini and in-browser WebLLM.",
+      "image": {
+        "src": "assets/quiver-analysis.png",
+        "alt": "Artemis Quiver's Job Analysis screen: a 92% match score with reasoning, interview preparation tips and CV suggestions for a sample profile."
+      },
+      "aiNote": "Built with AI coding agents. A project AGENTS.md file records the architecture decisions and forbidden patterns; I set the direction, review every change and own the tests."
+    },
+    {
+      "title": "Artemis Flow",
+      "description": "Job-discovery pipeline that reads a plain-language profile and has a local LLM write the search strategy (keywords, locations, exclusions) instead of relying on static filters. It feeds Quiver over REST. Private repository.",
+      "problem": "Job boards are full of duplicates and near-misses, and a keyword filter cannot say what a good fit looks like.",
+      "role": "Sole developer, from the ingestion design to the scoring experiments.",
+      "outcome": "Ingests from job boards, ATS APIs and 28 company career pages, merges duplicates on requisition identity rather than text similarity, and scores every job with a rationale. Runs on local models at no API cost.",
+      "stack": "Python, FastAPI, SQLite, Playwright, React; Ollama and LM Studio for local inference."
+    },
+    {
+      "title": "Local LLM infrastructure",
+      "description": "A Raspberry Pi gateway fronts a desktop compute node with Nginx and can wake it over the LAN, so my other projects run on self-hosted models instead of paid APIs.",
+      "stack": "Raspberry Pi, Nginx, Wake-on-LAN, Ollama, Docker Compose."
     }
   ],
   "links": [
@@ -50,66 +73,83 @@
   "cv": {
     "experience": [
       {
-        "role": "AI Engineering & Product Feasibility Advisory",
+        "role": "Independent Technical Advisory & AI Engineering",
         "organization": "Independent",
         "start": "2026",
         "end": "present",
-        "summary": "Advising founders on AI feasibility and production costs while shipping developer tools and local LLM workflows."
+        "summary": "Advise founders in my network on AI adoption and on scope and feasibility for AI products. Build AI tooling hands-on: Artemis Quiver and Artemis Flow."
       },
       {
         "role": "Director of Engineering, SMB",
-        "organization": "Toptal",
+        "organization": "Toptal (contract)",
         "start": "2022",
         "end": "2026",
-        "summary": "Owned the full client lifecycle solo across 200+ clients, architectural discovery, matching 700+ engineers, and technical dispute arbitration."
+        "summary": "Ran the full client lifecycle solo across 200+ SMB and mid-market clients, from discovery and stack assessment to matching, rate negotiation and replacements. Designed the technical discovery framework that lifted placements from 30% to 70%. Acted as technical arbiter in contested engagements, auditing delivered code in Rust, Python, R and PHP."
       },
       {
         "role": "Technical Lead, Core Banking Modernization",
         "organization": "BBVA",
         "start": "2021",
         "end": "2022",
-        "summary": "Modernized core banking self-management from Java 5/6 and VB8 to Java 8 with Spring Boot, introducing automated CI/CD pipelines under financial regulations."
+        "summary": "Hired to modernise a team whose engineers had twenty years' tenure and no version control. Introduced Scrum, git and a Bitbucket, Jenkins and SonarQube pull-request pipeline that took deployments from days to minutes under banking compliance, and started the move from Java 5/6 and VB8 to Java 8 and Spring Boot while keeping access to the COBOL core."
       },
       {
-        "role": "Back End Engineer",
+        "role": "Back-End Engineer",
         "organization": "Globant",
         "start": "2018",
         "end": "2021",
-        "summary": "Maintained Disney Parks high-traffic e-commerce checkout microservices with 99.9% uptime, and contributed to GCP encryption service migration for Equifax."
+        "summary": "Maintained checkout microservices for Disney Parks e-commerce at 99.9% uptime through peak seasonal load. On the Equifax account, contributed to the technical definition and proposal for a post-breach migration of encryption services to GCP, without implementation."
       },
       {
         "role": "End-User Computing Engineer, Renault Account",
         "organization": "Atos",
         "start": "2013",
         "end": "2018",
-        "summary": "Directed 2017 WannaCry crisis response patching 1,000+ endpoints over a weekend, owned plant software standards, and cut Level 2 escalations by 30%."
+        "summary": "Single point of contact for the 2017 WannaCry response: 1,000+ endpoints isolated and patched over a 48-hour weekend, and the plant was in full production on Monday. Owned the plant's software standards and cut Level 2 escalations by about 30% with PowerShell automation and a shared knowledge base."
       }
     ],
     "education": [
       {
-        "title": "Tecnicatura en Programación",
-        "organization": "Universidad Tecnológica Nacional (UTN)",
-        "year": "2019"
+        "title": "Bachiller (Argentine secondary-school qualification)",
+        "organization": "Instituto Lomas de Zamora",
+        "year": "2001 to 2007"
       },
       {
-        "title": "Computer Science (FaMAF)",
-        "organization": "Universidad Nacional de Córdoba",
-        "year": "2010"
+        "title": "Tecnicatura en Programación (Higher Technical Programme in Programming): coursework completed; thesis approved, defense not undertaken",
+        "organization": "Universidad Tecnológica Nacional (UTN)",
+        "year": "2017 to 2019"
+      },
+      {
+        "title": "Additional university-level studies in Computer Science and Programming",
+        "organization": "Universidad Nacional de Córdoba (FaMAF), Universidad de Buenos Aires, Universidad Empresarial Siglo 21"
+      },
+      {
+        "title": "Scrum Foundation Professional Certificate (SFPC)",
+        "organization": "CertNexus and Certiprof"
       }
     ],
     "skills": [
       "Solutions Architecture",
       "Technical Discovery",
-      "Presales",
-      "LLM Applications",
-      "AI Feasibility",
+      "Client & Account Leadership",
+      "Legacy Modernization",
       "Java & Spring Boot",
       "Python & FastAPI",
-      "React",
-      "CI/CD & DevOps",
+      "JavaScript & React",
+      "LLM Applications, cloud and local",
+      "CI/CD: Jenkins, SonarQube, Git",
       "Docker",
-      "Cloud (AWS, GCP, Azure)",
-      "Legacy Modernization"
+      "AWS, GCP, Azure",
+      "Agile Delivery: Scrum, Kanban",
+      "Incident Response"
+    ]
+  },
+  "now": {
+    "updated": "2026-10",
+    "items": [
+      "Looking for a Solutions Architect, Technical Account Manager or engineering leadership role.",
+      "Adding an application-assist side panel to Artemis Quiver that fills in application forms from my CV folder.",
+      "Testing small local models as job scorers for Artemis Flow, and writing up what holds up and what does not."
     ]
   },
   "builtAt": {
