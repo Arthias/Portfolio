@@ -1,7 +1,12 @@
 {
   "$schema": "./content.schema.json",
   "language": "en",
+  "labels": { "posts": "Writing" },
   "name": "Bruno Manfredi",
+  "photo": {
+    "src": "assets/photo.webp",
+    "alt": "Bruno Manfredi in glasses and a dark blazer, against a black background"
+  },
   "headline": "Solutions Architect & Technical Account Manager",
   "pitch": "I turn ambiguous business needs into technical requirements and roadmaps, then own the client relationship through delivery.",
   "highlights": [
@@ -28,7 +33,7 @@
   "languages": [
     { "name": "English", "level": "native" },
     { "name": "Spanish", "level": "native" },
-    { "name": "Italian", "level": "B2" }
+    { "name": "Italian", "level": "professional working proficiency" }
   ],
   "bio": [
     "I work where business intent meets engineering reality. Since 2011, without a gap, that has meant endpoint engineering at a Renault plant, back-end work on the Disney Parks checkout, and modernising a core banking team at BBVA.",
@@ -152,6 +157,20 @@
       "Testing small local models as job scorers for Artemis Flow, and writing up what holds up and what does not."
     ]
   },
+  "posts": [
+    {
+      "title": "I tested four tiny tool-calling models to see where they break",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7514269203512750080/",
+      "date": "2026-10-09",
+      "description": "Checking the artifact, not the announcement: a benchmark scored with refusal switched off, a five-tool ceiling that changed my router design, and a perfectly reproducible scorer that had no scoring value."
+    },
+    {
+      "title": "Artemis Quiver is open source",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7503010197527789568/",
+      "date": "2026-09-08",
+      "description": "A small CV-tailoring utility that grew into a job-scoring engine: four build approaches, a hybrid of in-browser, local and cloud models, and AI coding harnesses tested in real iterations."
+    }
+  ],
   "builtAt": {
     "event": "DevFest Milano 2026",
     "date": "2026-10-10"

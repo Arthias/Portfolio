@@ -131,7 +131,7 @@
       }
     },
     "languages": {
-      "description": "The languages you speak, each with its level: A1 to C2 as in the Common European Framework, or native.",
+      "description": "The languages you speak, each with its level: A1 to C2 as in the Common European Framework, native, or professional working proficiency.",
       "type": "array",
       "items": {
         "type": "object",
@@ -139,7 +139,7 @@
         "required": ["name", "level"],
         "properties": {
           "name": { "type": "string", "minLength": 1 },
-          "level": { "enum": ["A1", "A2", "B1", "B2", "C1", "C2", "native"] }
+          "level": { "enum": ["A1", "A2", "B1", "B2", "C1", "C2", "native", "professional working proficiency"] }
         }
       }
     },
