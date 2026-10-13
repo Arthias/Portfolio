@@ -44,7 +44,9 @@ Mood: structured, welcoming, precise. Minimal and crisp with an architectural, e
 ## Components
 
 - Links: accent colour, subtle hover shift and keyboard focus outline.
-- Projects: borderless rows with project name, description, and GitHub external link.
+- Projects: borderless rows with project name and description, and a GitHub link when the repository is public.
+- Case study: optional screenshot (full width, 1px border, 0.25rem radius), then a two-column list with monospace muted labels (Problem, My role, Outcome, Stack, With AI); one column under 40rem.
+- Photo: square, 480 px, made with `node tools/photo.mjs`.
 - Skills: clean plain wrapped list with subtle hover interaction.
 - Section headings: clear sans-serif with subtle spacing.
 - Dividers: SVG mountain ridge line dividers with low opacity between primary sections.
@@ -57,8 +59,12 @@ Mood: structured, welcoming, precise. Minimal and crisp with an architectural, e
 
 ## Sections
 
-1. `bio`: name, headline, pitch, highlights, availability and location.
-2. `projects`: leading section for a job search, featuring Artemis Quiver and GitHub link.
+1. `bio`: photo, name, headline, pitch, highlights, availability, location and languages.
+2. `projects`: leading section for a job search. Artemis Quiver as a full case study with a screenshot, then Artemis Flow and the local LLM infrastructure (private, no code link).
 3. `links`: GitHub, LinkedIn and email links.
-4. `cv`: experience timeline, education, and technical competencies.
+4. `cv`: experience timeline, education, and hands-on skills.
 5. `events`: DevFest Milano and workshop details.
+6. `now`: up to three current activities, with the month written.
+7. `posts`: shown as "Writing": published LinkedIn posts with date and a one-line summary.
+
+Section order on the page is fixed by `site/index.html` and `site/assets/render.js`: optional modules such as `posts` always come after the widgets.
